@@ -4,10 +4,9 @@ task releases: :environment do
   Project.all.each do |project|
     latest = client.latest_release(project.name)
     if latest[:id] > project.latest_release.to_i
-      # notify
-      # latest[:body]
-      # latest[:html_url]
-      project.update_attribute :lastest_release, latest[:id]
+       ReleaseMailer.new_release(latest, project).deliver
+
+      # project.update_attribute :lastest_release, latest[:id]
     end
   end
 end
