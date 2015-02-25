@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "octokit", "~> 3.0"
 gem 'rails_12factor', group: :production
 gem 'puma'
+gem 'maildown'
 
 group :development, :test do
   gem 'byebug'
@@ -19,5 +20,6 @@ group :development, :test do
   gem 'spring'
   gem 'pry-meta'
   gem 'pry-rails'
+  gem "letter_opener"
 end
 
