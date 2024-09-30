@@ -1,7 +1,5 @@
 == README
 
-=== Donate to 1P8ccYhVt4ByLahuVXiCY6U185gmYA8Rqf
-
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
